@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #d9d9d9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: #f9f4da;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.invis {
+  width: 350px;
+  height: 80px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.status {
+  text-align: center;
+
+  width: 350px;
+  height: 80px;
+
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.backgroundgreen {
+  background-color: green;
+  border-radius: 5px;
+  padding: 20px;
+}
+.backgroundred {
+  background-color: red;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.status p {
+  margin-top: 6px;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  gap: 1px;
+}
+
+span.chip {
+  border-radius: 3px;
+  padding: 4.5px;
+  position: relative;
+}
+
+/* Dimmed overlay with skull on "lost" languages */
+span.chip.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  border-bottom: #f9f4da;
+  margin-top: 30px;
+}
+
+.letters span {
+  padding: 12px 18px;
+  background-color: #1b1a1a;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #f9f4da;
+  border-bottom: 1px solid #f9f4dad4;
+}
+
+.letters span.red {
+  background-color: red;
+}
+
+.keyboard {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 350px;
+}
+
+.keyboardbutton {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: orange;
+}
+
+.keyboard button:hover {
+  transform: translateY(-1px);
+}
+
+button.new-game {
+  background-color: #11b5e5;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  width: 225px;
+  height: 40px;
+  padding: 6px 12px;
+  display: block;
+  margin-inline: auto;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.keyboardbutton.green {
+  background-color: green;
+}
+
+.keyboardbutton.red {
+  background-color: red;
+}
+
+.farewell {
+  width: 350px;
+  height: 80px;
+  background-color: pink;
+  text-align: center;
+  color: #1b1a1a;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
